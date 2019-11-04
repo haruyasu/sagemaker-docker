@@ -8,12 +8,12 @@ class SagemakerClient:
     def submit_transform_job(self):
 
         model_name = self.client.list_models(
-            NameContains="sample-model4",
+            NameContains="sample-model5",
             SortOrder='Descending',
             SortBy='CreationTime')["Models"][0]["ModelName"]
 
         transform_params = {
-            "TransformJobName": "sample-transform8",
+            "TransformJobName": "sample-transform9",
             "ModelName": model_name,
             "MaxConcurrentTransforms": 2,
             "MaxPayloadInMB": 50,

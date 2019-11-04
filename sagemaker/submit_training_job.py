@@ -7,7 +7,7 @@ class SagemakerClient:
 
     def submit_training_job(self):
         training_params = {
-            "TrainingJobName": "sample-training18",
+            "TrainingJobName": "sample-training19",
             "HyperParameters": {
                 'objective': 'multiclass',
                 'num_class': '3'
